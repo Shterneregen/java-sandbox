@@ -4,6 +4,10 @@ public class Engine {
 
     private String objName;
 
+    public Engine() {
+        objName = "default";
+    }
+
     public Engine(String objName) {
         this.objName = objName;
     }
