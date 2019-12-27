@@ -7,6 +7,7 @@ public class ThreadTest {
             super(target);
         }
 
+        // Если убрать этот run, то будет вызываться код из MyRunnable
         @Override
         public void run() {
             System.out.println("In my thread!");

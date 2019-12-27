@@ -17,6 +17,7 @@ public class TestSerialization {
                     new FileInputStream("myFile"));
             SpecialSerial s2 = (SpecialSerial) is.readObject();
             is.close();
+            System.out.println("y = " + s2.y);
             System.out.println(s2.x + s2.y + " " + s2.z); // 20 10
         } catch (Exception e) {
             e.printStackTrace();

@@ -25,7 +25,7 @@ public class TestClass {
         doStaff2(list1);
         doStaff3(list1);
         doStaff3(list2);
-//        doStaff1(list2);
+//        doStaff1(list2); // incompatible types: java.util.List<random.epm.$6.Extended> cannot be converted to java.util.List<random.epm.$6.Empty>
 
 //        doStaff4(list1);
         doStaff4(list2);
