@@ -13,7 +13,7 @@ public class LambdaApp {
         Supplier<User> userFactory = () -> {
 
             Scanner in = new Scanner(System.in);
-            System.out.println("Введите имя: ");
+            System.out.println("Enter name: ");
             String name = in.nextLine();
             return new User(name);
         };
@@ -21,8 +21,8 @@ public class LambdaApp {
         User user1 = userFactory.get();
         User user2 = userFactory.get();
 
-        System.out.println("Имя user1: " + user1.getName());
-        System.out.println("Имя user2: " + user2.getName());
+        System.out.println("user1 name: " + user1.getName());
+        System.out.println("user2 name: " + user2.getName());
     }
 }
 

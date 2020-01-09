@@ -1,4 +1,4 @@
-package random.oca._58;
+package random.oca_mock_1._58;
 
 public class Test {
     public static void main(String[] args) {

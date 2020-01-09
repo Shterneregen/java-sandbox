@@ -1,4 +1,4 @@
-package random.oca._22;
+package random.oca_mock_1._22;
 
 class Counter {
     int count;
