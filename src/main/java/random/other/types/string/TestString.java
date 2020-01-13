@@ -1,4 +1,4 @@
-package random.other.string;
+package random.other.types.string;
 
 public class TestString {
 
