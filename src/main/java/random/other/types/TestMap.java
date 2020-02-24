@@ -1,4 +1,4 @@
-package random.other;
+package random.other.types;
 
 import java.util.Collections;
 import java.util.HashSet;
