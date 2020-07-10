@@ -1,4 +1,4 @@
-package random;
+package random.other.client_server;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -11,7 +11,7 @@ public class ServerApp {
     public static void main(String[] args) throws IOException {
         ServerSocketChannel ss = ServerSocketChannel.open();
         ss.bind(new InetSocketAddress("localhost", 9999));
-        try (SocketChannel sc = ss.accept();) {
+        try (SocketChannel sc = ss.accept()) {
             System.out.println("Accepted conn");
             ByteBuffer bb = ByteBuffer.allocate(9);
             sc.read(bb);

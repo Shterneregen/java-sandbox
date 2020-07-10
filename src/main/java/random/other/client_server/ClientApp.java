@@ -1,4 +1,4 @@
-package random;
+package random.other.client_server;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
