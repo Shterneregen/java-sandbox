@@ -1,4 +1,4 @@
-package random.function.Predicate;
+package random.java8.function.Predicate;
 
 import java.util.function.Predicate;
 

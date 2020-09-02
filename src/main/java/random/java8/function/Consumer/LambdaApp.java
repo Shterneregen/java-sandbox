@@ -1,4 +1,4 @@
-package random.function.Consumer;
+package random.java8.function.Consumer;
 
 import java.util.function.Consumer;
 

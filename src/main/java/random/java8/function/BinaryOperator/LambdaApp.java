@@ -1,4 +1,4 @@
-package random.function.BinaryOperator;
+package random.java8.function.BinaryOperator;
 
 import java.util.function.BinaryOperator;
 

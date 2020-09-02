@@ -1,4 +1,4 @@
-package random.function.Function;
+package random.java8.function.Function;
 
 import java.util.function.Function;
 

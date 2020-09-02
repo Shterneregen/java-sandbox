@@ -1,4 +1,4 @@
-package random.function.Supplier;
+package random.java8.function.Supplier;
 
 import java.util.Scanner;
 import java.util.function.Supplier;

@@ -1,4 +1,4 @@
-package random.function.Predicate;
+package random.java8.Predicate;
 import java.util.function.Predicate;
 
 public class LambdaApp {

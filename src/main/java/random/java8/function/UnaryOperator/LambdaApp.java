@@ -1,4 +1,4 @@
-package random.function.UnaryOperator;
+package random.java8.function.UnaryOperator;
 
 import java.util.function.UnaryOperator;
 
