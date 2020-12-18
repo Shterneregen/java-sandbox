@@ -1,15 +1,12 @@
-package spring;
+package spring.beanpostprocessors.injectrandomint;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import spring.beanpostprocessors.MyBean;
+import org.springframework.context.annotation.ComponentScan;
 
-public class App {
-
+@ComponentScan(basePackages = {"spring.beanpostprocessors.injectrandomint"})
+public class Main {
 	public static void main(String[] args) {
-
-		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
-		ctx.scan("spring");
-		ctx.refresh();
+		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Main.class);
 
 		MyBean bean = ctx.getBean(MyBean.class);
 		System.out.println(bean.getValue1());

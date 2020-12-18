@@ -1,7 +1,6 @@
-package spring.beanpostprocessors;
+package spring.beanpostprocessors.injectrandomint;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
@@ -9,15 +8,14 @@ import org.springframework.util.ReflectionUtils;
 
 import java.lang.reflect.Field;
 
+@Slf4j
 @Component
 public class InjectRandomIntBeanPostProcessor implements BeanPostProcessor {
-
-	private static final Logger LOGGER = LoggerFactory.getLogger(InjectRandomIntBeanPostProcessor.class);
 
 	@Override
 	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 
-		LOGGER.info("postProcessBeforeInitialization::beanName = {}, beanClass = {}", beanName, bean.getClass().getSimpleName());
+		log.info("postProcessBeforeInitialization::beanName = {}, beanClass = {}", beanName, bean.getClass().getSimpleName());
 
 		Field[] fields = bean.getClass().getDeclaredFields();
 
