@@ -1,4 +1,4 @@
-package random.other.gb;
+package random.other.gc;
 
 import java.text.CharacterIterator;
 import java.text.StringCharacterIterator;

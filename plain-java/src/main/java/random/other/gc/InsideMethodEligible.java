@@ -1,4 +1,4 @@
-package random.other.gb;
+package random.other.gc;
 
 // Object created inside a method :
 // When a method is called it goes inside the stack frame. When the method is popped

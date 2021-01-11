@@ -1,4 +1,4 @@
-package random.other.gb;
+package random.other.gc;
 
 // Nullifying the reference variable :
 // When all the reference variables of an object are changed to NULL,

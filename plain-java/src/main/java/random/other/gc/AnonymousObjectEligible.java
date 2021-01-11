@@ -1,4 +1,4 @@
-package random.other.gb;
+package random.other.gc;
 
 // Anonymous object:
 // The reference id of an anonymous object is not stored anywhere. Hence, it becomes unreachable.

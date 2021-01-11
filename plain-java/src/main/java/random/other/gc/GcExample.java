@@ -1,4 +1,4 @@
-package random.other.gb;
+package random.other.gc;
 
 public class GcExample {
 

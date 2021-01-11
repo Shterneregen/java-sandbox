@@ -1,4 +1,4 @@
-package random.other.gb;
+package random.other.gc;
 
 // Reassigning the reference variable:
 // When reference id of one object is referenced to reference id of some other object then the previous object
