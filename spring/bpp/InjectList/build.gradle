@@ -1,0 +1,30 @@
+plugins {
+    id "java"
+}
+
+repositories {
+    jcenter()
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+ext {
+    lombokVersion = "1.18.18"
+}
+
+dependencies {
+    implementation(
+            "com.google.guava:guava:29.0-jre",
+            "org.springframework.boot:spring-boot-starter:2.4.2",
+            "org.projectlombok:lombok:$lombokVersion",
+            "org.reflections:reflections:0.9.12"
+    )
+    compileOnly "org.projectlombok:lombok:$lombokVersion"
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+    testImplementation "junit:junit:4.13"
+}
+
