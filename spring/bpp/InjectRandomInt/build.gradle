@@ -1,0 +1,19 @@
+plugins {
+    id "java"
+}
+
+repositories {
+    jcenter()
+}
+
+ext {
+    springVersion = '5.3.2'
+}
+
+dependencies {
+    implementation(
+            "org.springframework:spring-context:$springVersion",
+    )
+    testImplementation "junit:junit:4.13"
+}
+
