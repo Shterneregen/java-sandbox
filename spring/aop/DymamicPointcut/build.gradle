@@ -1,0 +1,39 @@
+plugins {
+    id "org.springframework.boot" version "2.4.3"
+    id "io.spring.dependency-management" version "1.0.11.RELEASE"
+    id "java"
+}
+
+group = "demo"
+version = "0.0.1-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+ext {
+    lombokVersion = "1.18.18"
+}
+
+dependencies {
+    implementation(
+            "org.springframework.boot:spring-boot-starter-web",
+            "org.springframework.boot:spring-boot-starter-aop",
+            "org.projectlombok:lombok:$lombokVersion"
+    )
+    compileOnly(
+            "org.projectlombok:lombok:$lombokVersion"
+    )
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+    testImplementation "org.springframework.boot:spring-boot-starter-test"
+}
+
+test {
+    useJUnitPlatform()
+}
