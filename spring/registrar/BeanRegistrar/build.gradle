@@ -1,0 +1,47 @@
+plugins {
+    id "java"
+    id "application"
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+}
+
+repositories {
+    jcenter()
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+mainClassName = "BeanRegistrar.TomcatStarter"
+
+ext {
+    springVersion = "5.3.4"
+    lombokVersion = "1.18.18"
+    tomcatVersion = "8.5.63"
+    jacksonVersion = "2.12.1"
+    servletApiVersion = "4.0.1"
+}
+
+dependencies {
+    implementation(
+            "org.springframework:spring-webmvc:$springVersion",
+            "org.projectlombok:lombok:$lombokVersion",
+            "org.apache.tomcat.embed:tomcat-embed-jasper:$tomcatVersion",
+            "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
+    )
+    compileOnly(
+            "javax.servlet:javax.servlet-api:$servletApiVersion",
+            "org.projectlombok:lombok:$lombokVersion"
+    )
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+    testImplementation "junit:junit:4.13"
+}
+
+shadowJar {
+    mergeServiceFiles()
+    archiveBaseName.set('shadow')
+    archiveClassifier.set('')
+    archiveVersion.set('')
+}
