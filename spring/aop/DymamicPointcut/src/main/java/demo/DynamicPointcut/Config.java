@@ -9,7 +9,7 @@ public class Config {
 
 	@Bean
 	public CustomPointcut customPointcut() {
-		return new  CustomPointcut();
+		return new CustomPointcut();
 	}
 
 	@Bean
