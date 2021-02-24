@@ -38,14 +38,14 @@ public class ProfilingHandlerBPP implements BeanPostProcessor {
 					(proxy, method, args) -> {
 
 						if (controller.isEnabled()) {
-							System.out.println("Profiling...");
+							System.out.println("Profiling :: Start");
 							long before = System.nanoTime();
 
 							Object retVal = method.invoke(bean, args);
 
 							long after = System.nanoTime();
 							System.out.println(after - before);
-							System.out.println("End");
+							System.out.println("Profiling :: End");
 
 							return retVal;
 						} else {

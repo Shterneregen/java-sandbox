@@ -7,3 +7,8 @@ How to find all beans in context:
 ```
 context.getBeanDefinitionNames()
 ```
+
+###### 3 phases of initialization:
+* Constructor
+* @PostConstruct
+* ApplicationListener
