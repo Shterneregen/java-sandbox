@@ -1,10 +1,12 @@
 package xml.configured.spring.services;
 
+import xml.configured.spring.bfpp.DeprecatedClass;
 import xml.configured.spring.postproxy.PostProxy;
 import xml.configured.spring.profiling.Profiling;
 
 import javax.annotation.PostConstruct;
 
+//@DeprecatedClass(newImpl = T1000.class) // Uncomment to check BFPP
 @Profiling
 public class TerminatorQuoter implements Quoter {
 

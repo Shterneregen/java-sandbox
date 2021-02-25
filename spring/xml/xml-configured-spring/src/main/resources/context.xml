@@ -14,6 +14,7 @@
 
     <bean class="xml.configured.spring.profiling.ProfilingHandlerBPP"/>
     <bean class="xml.configured.spring.postproxy.PostProxyInvokerContextListener"/>
+    <bean class="xml.configured.spring.bfpp.DeprecationHandlerBFPP"/>
 
     <bean class="xml.configured.spring.services.TerminatorQuoter">
         <property name="message" value="I'll be back!"/>
