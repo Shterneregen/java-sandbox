@@ -1,4 +1,4 @@
-package loggable;
+package loggable.aspects;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
@@ -13,17 +13,14 @@ import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.logging.Logger;
 
-//@Slf4j
+@Slf4j
 @Component
 @Aspect
-@EnableAspectJAutoProxy
+//@EnableAspectJAutoProxy
 public class LoggingAspect {
 
-	private static final Logger log = Logger.getLogger(LoggingAspect.class.getName());
-
-	@Pointcut("@annotation(Loggable)")
+	@Pointcut("@annotation(loggable.annotatoins.Loggable)")
 	public void executeLogging() {
 	}
 

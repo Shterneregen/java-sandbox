@@ -1,5 +1,6 @@
-package loggable;
+package loggable.services;
 
+import loggable.annotatoins.Loggable;
 import org.springframework.stereotype.Service;
 
 @Service

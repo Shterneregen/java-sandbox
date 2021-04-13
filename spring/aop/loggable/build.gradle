@@ -23,9 +23,7 @@ dependencies {
             "org.springframework:spring-aspects:$springVersion",
             "org.springframework:spring-aop:$springVersion",
             "org.projectlombok:lombok:$lombokVersion",
-//            "org.springframework.boot:spring-boot-starter-quartz:2.4.1"
-
-
+            "org.slf4j:slf4j-log4j12:1.7.30"
     )
     compileOnly "org.projectlombok:lombok:$lombokVersion"
     annotationProcessor "org.projectlombok:lombok:$lombokVersion"
